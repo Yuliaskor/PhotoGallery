@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B463C">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="91dp"
+            android:layout_height="match_parent"
+            android:text="2020-03-21"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp">
+        </TextView>
+        
+        <Space
+            android:layout_width="145dp"
+            android:layout_height="match_parent">
+        </Space>
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:background="@drawable/delete"
+            >
+        </ImageButton>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="match_parent">
+        </Space>
+        <ImageButton
+            android:id="@+id/editButton"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:background="@drawable/edit"
+            >
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="#F4F1E9"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="20dp">
+
+        <TextView
+            android:id="@+id/titleItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Your title"
+            android:textColor="@color/black"
+            android:textSize="18sp">
+
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/photo"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="16dp"
+        android:contentDescription="image">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewItem"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_margin="20dp"
+        android:background="#36574B"
+        >
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Photo description"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
